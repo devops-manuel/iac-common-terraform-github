@@ -1,0 +1,16 @@
+# Se Crea la organización de forma manual
+
+# devops-manuel
+
+# link de organización: https://github.com/devops-manuel
+# guia: https://learn.hashicorp.com/tutorials/terraform/github-user-teams?in=terraform/it-saas
+
+export GITHUB_TOKEN=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
+export GITHUB_OWNER=devops-manuel
+
+# Se crean primero los equipos
+
+terraform apply -target github_team.all
+
+terraform apply
+
